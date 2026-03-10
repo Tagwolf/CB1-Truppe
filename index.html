@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CB1 TRUPPE · PORTFOLIOS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #1c1c22;
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+
+
+        .glas-container {
+            max-width: 1000px;
+            width: 100%;
+            background: rgba(55, 60, 70, 0.3);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border: 1px solid rgba(210, 220, 240, 0.2);
+            border-radius: 3rem;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+            padding: 2.2rem;
+        }
+
+
+        .header {
+            margin-bottom: 2rem;
+            padding: 0 0.5rem;
+        }
+
+        .header h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: #eef3fc;
+            letter-spacing: -0.5px;
+        }
+
+        .header p {
+            color: #b2c3e0;
+            font-weight: 300;
+            font-size: 1rem;
+            margin-top: 0.3rem;
+        }
+
+
+        .player-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.2rem;
+            margin: 1.5rem 0 2rem;
+        }
+
+
+        .player-card {
+            background: rgba(65, 72, 85, 0.35);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 2rem;
+            padding: 1.5rem 1rem;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.15s;
+            box-shadow: 0 15px 25px -10px rgba(0, 0, 0, 0.5);
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .player-card:hover {
+            background: rgba(85, 95, 115, 0.45);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+        }
+
+
+        .minecraft-head {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 0.8rem;
+            image-rendering: pixelated;
+            background: rgba(35, 40, 50, 0.6);
+            border-radius: 20px;
+            padding: 5px;
+            border: 1px solid rgba(255,255,255,0.15);
+        }
+
+        .minecraft-head img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+            border-radius: 15px;
+        }
+
+        .player-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #eef3fc;
+            margin-bottom: 0.2rem;
+        }
+
+        .realname {
+            font-size: 0.95rem;
+            color: #b0c6f0;
+            font-weight: 300;
+        }
+
+
+        .info-panel {
+            background: rgba(60, 68, 82, 0.25);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 2rem;
+            padding: 1.2rem;
+            margin: 1.5rem 0 0.5rem;
+            text-align: center;
+            color: #cbd8ff;
+            font-size: 1rem;
+        }
+
+        .info-panel i {
+            margin-right: 8px;
+            color: #9bb3e0;
+        }
+
+        /* Fußzeile */
+        .footer-note {
+            margin-top: 2rem;
+            text-align: center;
+            color: #7f8fb2;
+            font-size: 0.85rem;
+        }
+
+
+        @media (max-width: 700px) {
+            .player-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="glas-container">
+
+        <div class="header">
+            <h1>❖ CB1 TRUPPE</h1>
+        </div>
+
+
+        <div class="player-grid">
+            <!-- tagwolf_abi = tagwolf -> verlinkt auf portfolio1.html -->
+            <a href="portfolio1.html" class="player-card" target="_blank">
+                <div class="minecraft-head">
+                    <img src="https://mc-heads.net/avatar/tagwolf_abi/80" alt="kopf" onerror="this.src='https://mc-heads.net/avatar/MHF_Steve/80'">
+                </div>
+                <div class="player-name">tagwolf_abi</div>
+                <div class="realname">tagwolf</div>
+            </a>
+
+            <!-- dcue = amex -> portfolio2.html -->
+            <a href="portfolio2.html" class="player-card" target="_blank">
+                <div class="minecraft-head">
+                    <img src="https://mc-heads.net/avatar/dcue/80" alt="kopf" onerror="this.src='https://mc-heads.net/avatar/MHF_Steve/80'">
+                </div>
+                <div class="player-name">dcue</div>
+                <div class="realname">Unbekannt</div>
+            </a>
+
+            <!-- btwlinus = Linus -> portfolio3.html -->
+            <a href="portfolio3.html" class="player-card" target="_blank">
+                <div class="minecraft-head">
+                    <img src="https://mc-heads.net/avatar/btwlinus/80" alt="kopf" onerror="this.src='https://mc-heads.net/avatar/MHF_Steve/80'">
+                </div>
+                <div class="player-name">btwlinus</div>
+                <div class="realname">Linus</div>
+            </a>
+
+            <!-- Sabuyaz = Felix -> portfolio4.html -->
+            <a href="portfolio4.html" class="player-card" target="_blank">
+                <div class="minecraft-head">
+                    <img src="https://mc-heads.net/avatar/Sabuyaz/80" alt="kopf" onerror="this.src='https://mc-heads.net/avatar/MHF_Steve/80'">
+                </div>
+                <div class="player-name">Sabuyaz</div>
+                <div class="realname">Felix</div>
+            </a>
+        </div>
+
+        <!-- INFOPANEL - erklärt dass neuer Tab aufgeht -->
+        <div class="info-panel">
+            <i class="fas fa-hand-pointer"></i> klick auf ein mitglied — portfolio öffnet sich im neuen tab
+        </div>
+
+        <!-- Fußzeile -->
+        <div class="footer-note">
+            <i class="far fa-copy" style="margin-right: 6px;"></i> Die ganze truppe frfr. Merke direkt spaß
+        </div>
+    </div>
+
+
+    <script>
+        document.querySelectorAll('.minecraft-head img').forEach(img => {
+            img.onerror = function() {
+                this.src = 'https://mc-heads.net/avatar/MHF_Steve/80';
+            };
+        });
+    </script>
+</body>
+</html>
