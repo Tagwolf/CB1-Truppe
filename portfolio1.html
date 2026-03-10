@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weiterleitung zu tagwolf_</title>
+    <!-- Kein Fancy Design nötig - nur sofortige Weiterleitung -->
+    <meta http-equiv="refresh" content="0; url=https://guns.lol/tagwolf_">
+    <!-- Fallback für ältere Browser / falls Meta-Refresh nicht klappt -->
+    <script>
+        window.location.replace("https://guns.lol/tagwolf_");
+    </script>
+    <style>
+        /* Minimaler Style für den Fall, dass die Weiterleitung kurz sichtbar ist */
+        body {
+            background: #1c1c22;
+            color: #eef3fc;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 1rem;
+            text-align: center;
+        }
+        .message {
+            background: rgba(55, 60, 70, 0.3);
+            backdrop-filter: blur(10px);
+            border-radius: 2rem;
+            padding: 2rem;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .loader {
+            border: 3px solid rgba(255,255,255,0.2);
+            border-top: 3px solid #9bb3e0;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 1rem auto;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        a { color: #b7ceff; }
+    </style>
+</head>
+<body>
+    <div class="message">
+        <p>⏳ Weiterleitung zu <strong>guns.lol/tagwolf_</strong> ...</p>
+        <div class="loader"></div>
+        <p style="font-size: 0.9rem; margin-top: 1rem;">falls nichts passiert, <a href="https://guns.lol/tagwolf_">hier klicken</a>.</p>
+    </div>
+</body>
+</html>
